@@ -99,25 +99,44 @@ nav a:nth-child(1){
 	position: relative;
 }
 .countries{
+	width: 85%;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
 	overflow: hidden;
 	margin-right: 2em;
 }
+.countries div{
+	width: 200px;
+	height: 280px;
+	position: relative;
+}
 .countries img{
-	width: 400px;
-	height: 340px;
+	width: 200px;
+	height: 280px;
 }
-.countries img:before{
-	content: ' ';
-	width: 100px;
-	height: 40px;
+.countries div:before{
+	content: '$550';
+	width: 80px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: url(../img/flag.png);
+	background-size: 100%;
+	position: absolute;
+	top: 30px;
+}
+.countries div:after{
+	content: 'Katmandu, Nepal';
 	display: inline-block;
-	color: black;
-	background: var(--fourth-color);
+	color: white;
+	position: absolute;
+	left: 10px;
+	bottom: 30px;
 }
-.countries img[src="img/card 2.png"]{
+.countries div:nth-child(2){
 	align-self: flex-start; 
 }
 .list_offers .mark{
@@ -166,6 +185,191 @@ nav a:nth-child(1){
 	position: relative;
 	top: -14px;
 }
+.travel_video{
+	margin-bottom: 10em;
+	display: flex;
+	flex-direction: column;
+}
+.head_video{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	margin-bottom: 5em;
+}
+.head_video h3{
+	font-size: 45px;
+	position: relative;
+	margin-bottom: 3em;
+}
+.head_video h3:before{
+	content: ' ';
+	display: inline-block;
+	width: 3em;
+	height: 0.15em;
+	background: var(--fourth-color);
+	position: absolute;
+	left: 30%;
+	top: 100px;
+}
+.head_video p{
+	width: 80%;
+	text-align: center;
+}
+.videos{
+	display: flex;
+	justify-content: space-between;
+}
+.video{
+	width: 70%; 
+	position: relative;
+}
+.video img:nth-child(1){
+	width: 100%;
+}
+.video:before{
+	content: '';
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 3px solid white;
+	border-radius: 50%;
+	background: transparent;
+	position: absolute;
+	left: 340px;
+	top: 190px;
+}
+.video img:nth-child(2){
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 372px;
+	top: 217px;
+}
+.video p{
+	position: absolute;
+	top: 370px;
+	left: 50px;
+	color: white;
+	font-size: 20px;
+}
+.video span{
+	position: absolute;
+	top: 430px;
+	left: 50px;
+	color: #cfcfcf;
+	font-size: 20px;
+}
+.video_list{
+	width: 29%;
+	display: flex;
+	flex-direction: column;
+}
+.list_video{
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.list_video:hover{
+	background: #e0e0e0;
+}
+.list_video:nth-child(1){
+	background: #e0e0e0;
+}
+.list_video img{
+	width: 130px;
+	margin: 10px;
+}
+.list_video h3{
+	font-size: 15px;
+	width: 150px;
+}
+blockquote{
+	width: 40em;
+	height: 40em;
+	background: linear-gradient(to top,var(--fourth-color) 0%,var(--fourth-color) 34%,#ffffff 73%,#ffffff 100%);	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10em;
+}
+.wrap{
+	position: relative;
+	top: 0.4em;
+	background: white;
+	border-radius: 50%;
+	width: 98%;
+	height: 98%;
+	text-align: center;
+	display: inline-block;
+}
+.wrap h2{
+	font-size: 35px;
+	width: 70%;
+	margin: 0 auto;
+}
+.wrap h2:after{
+	content: ' ';
+	display: inline-block;
+	width: 3em;
+	height: 0.2em;
+	border-radius: 1em;
+	background: var(--fourth-color);
+	position: absolute;
+	left: 260px;
+	top: 70px;
+}
+.wrap p{
+	font-size: 15px;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	top: 5em;	
+}
+.wrap img{
+	position: relative;
+	top: 7em;
+	width: 10em;
+	height: 10em;
+}
+.arrow_right{
+	font-size: 50px;
+	position: absolute;
+	left: 9em;
+	top: 4.8em;
+}
+.arrow_left{
+	font-size: 50px;
+	position: absolute;
+	left: 3em;
+	top: 4.8em;
+}
+.wrap h3{
+	position: relative;
+	top: 7.5em;
+}
+.wrap .name{
+	position: relative;
+	top: 9em;
+}
+.wrap nav{
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 530px;
+	left: 155px;
+}
+.wrap nav div{
+	width: 4em;
+	height: 0.3em;
+	display: inline-block;
+	background: grey;
+	border-radius: 10px;
+}
+.wrap nav div:nth-child(1){
+	background: var(--fourth-color);
+}
 footer{
 	background: url(../img/plane.png);
 	width: 100%;
@@ -180,12 +384,20 @@ footer{
 	display: flex;
 	margin-top: 1em;
 }
-.footer_nav div{
+.footer_nav a{
 	padding: 1em 3em;
 	color: grey;
 	font-size: 20px;
+	text-decoration: none;
 }
-.footer_nav div:hover{
+.footer_nav a:nth-child(1){
+	border: 2px solid var(--fourth-color);
+	border-radius: 10px;
+	box-sizing: border-box;
+	transform: skew(-20deg);
+	color: var(--fourth-color);
+}
+.footer_nav a:hover{
 	border-radius: 10px;
 	border: 2px solid var(--fourth-color);
 	box-sizing: border-box;

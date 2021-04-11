@@ -201,17 +201,25 @@ footer{
 	display: flex;
 	margin-top: 1em;
 }
-.footer_nav div{
+.footer_nav a{
 	padding: 1em 3em;
 	color: grey;
 	font-size: 20px;
+	text-decoration: none;
 }
-.footer_nav div:hover{
+.footer_nav a:nth-child(3){
+	border: 2px solid var(--second-color);
 	border-radius: 10px;
-	border: 2px solid #34d5eb;
 	box-sizing: border-box;
 	transform: skew(-20deg);
-	color: #34d5eb;
+	color: var(--second-color);
+}
+.footer_nav a:hover{
+	border-radius: 10px;
+	border: 2px solid var(--second-color);
+	box-sizing: border-box;
+	transform: skew(-20deg);
+	color: var(--second-color);
 }
 .nav_social{
 	display: flex;
